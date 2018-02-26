@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="css/main.css">
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
         var newQuote = function() {
@@ -11,19 +13,22 @@
         };
 
         var successCallback = function(result) {
-            $("div").append(result[0].content + "<p>— " + result[0].title + "</p>")
+            $("#quote").remove();
+            $("div").append("<div id='quote'>" + result[0].content + "<p>— " + result[0].title + "</p>" + "</div>")
+            console.log(result[0].content.replace(/<\/?p[^>]*>/g, ""));
         };
 
         $(document).ready(function() {
             newQuote();
-            $("button").click(newQuote);
+            $("#newQuote").click(newQuote);
         });
         </script>
+        
     </head>
     <body>
 
-        <button>New quote</button>
-
+        <button id="newQuote">New quote</button>
+        <a class="twitter-share-button" href="https://twitter.com/intent/tweet" target="_blank"><button>Tweet</button></a>
         <div></div>
 
     </body>
