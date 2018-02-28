@@ -14,8 +14,8 @@
 
         var successCallback = function(result) {
             $("#quote").remove();
-            $("div").append("<div id='quote'>" + result[0].content + "<p>— " + result[0].title + "</p>" + "</div>")
-            var quote = result[0].content.replace(/<\/?p[^>]*>/g, "") + " —" + result[0].title;
+            $("div").append("<div id='quote'>" + result[0].content + "<p align='right' id='title'>— <em>" + result[0].title + "</em></p>" + "</div>")
+            var quote = result[0].content.replace(/<\/?p[^>]*>/g, "") + "—" + result[0].title;
             $(".twitter-share-button").attr("href", "https://twitter.com/intent/tweet?text=" + quote);
         };
 
@@ -28,9 +28,9 @@
     </head>
     <body>
 
-        <button id="newQuote">New quote</button>
-        <a class="twitter-share-button" target="_blank"><button>Tweet</button></a>
-        <div></div>
+        <button id="newQuote"><strong>NEW QUOTE</strong></button>
+        <a class="twitter-share-button" target="_blank"><button><strong>TWEET</strong></button></a>
+        <div id="quoteAndTitle"></div>
 
     </body>
 </html>
