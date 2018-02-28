@@ -10,9 +10,9 @@
 
 ## Demo
 
-Here is a working live demo :  https://kelvinman.github.io/quote-new-tab/
+Here is a working live demo :  https://kelvinman.github.io/quote-new-tab-page/
 
-
+s
 ## [Usage](https://kelvinman.github.io/quote-new-tab-page/)
 
 ### Bug / Feature Request

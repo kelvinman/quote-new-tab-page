@@ -14,7 +14,7 @@
 
         var successCallback = function(result) {
             $("#quote").remove();
-            $("div").append("<div id='quote'>" + result[0].content + "<p align='right' id='title'>— <em>" + result[0].title + "</em></p>" + "</div>")
+            $("div").append("<div id='quote'><strong>" + result[0].content + "<p align='right' id='title'>— " + result[0].title + "</strong></p>" + "</div>")
             var quote = result[0].content.replace(/<\/?p[^>]*>/g, "") + "—" + result[0].title;
             $(".twitter-share-button").attr("href", "https://twitter.com/intent/tweet?text=" + quote);
         };
@@ -31,6 +31,7 @@
         <button id="newQuote"><strong>NEW QUOTE</strong></button>
         <a class="twitter-share-button" target="_blank"><button><strong>TWEET</strong></button></a>
         <div id="quoteAndTitle"></div>
+        <h6>Written and coded by Kelvin Man.</h6>
 
     </body>
 </html>
