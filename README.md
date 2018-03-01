@@ -2,7 +2,7 @@
 <table>
 <tr>
 <td>
-  A new tab page with ramdomized design quote to ignite your inspiration.
+  A new tab page with randomized design quote to ignite your inspiration.
 </td>
 </tr>
 </table>
@@ -12,7 +12,6 @@
 
 Here is a working live demo :  https://kelvinman.github.io/quote-new-tab-page/
 
-s
 ## [Usage](https://kelvinman.github.io/quote-new-tab-page/)
 
 ### Bug / Feature Request
